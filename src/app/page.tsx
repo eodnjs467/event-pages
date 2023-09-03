@@ -1,11 +1,10 @@
-import styles from './page.module.css'
-
+import { getFeaturedEvents } from '../../dummy-data';
+import EventList from '../components/events/eventList';
 export default function HomePage() {
+  const featuredEvents = getFeaturedEvents();
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        The featured Events
-      </div>
+    <main>
+      <EventList items={featuredEvents} />
     </main>
   )
 }
