@@ -2,7 +2,7 @@ import { getFeaturedEvents } from '../../dummy-data';
 import EventList from '../components/events/eventList';
 import {NextResponse} from "next/server";
 
-export const options = {
+const options = {
   headers: {
     accept: "application/json",
     Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_ACCESS_TOKEN}`,
