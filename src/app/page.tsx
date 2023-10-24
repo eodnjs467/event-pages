@@ -1,6 +1,5 @@
 import { getFeaturedEvents } from '../../dummy-data';
 import EventList from '../components/events/eventList';
-import {NextResponse} from "next/server";
 
 const options = {
   headers: {
