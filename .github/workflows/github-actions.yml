@@ -1,4 +1,4 @@
-name: test actions
+name: test2 actions
 
 on: [push]
 
@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setting token .env
+      - name: Settings token .env
         run: |
           echo "NEXT_PUBLIC_TMDB_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_TMDB_ACCESS_TOKEN }}" >> .env
           echo "NEXT_PUBLIC_TOKEN=${{ secrets.NEXT_PUBLIC_TOKEN }}" >> .env
